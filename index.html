@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Verifica · NutriLab</title>
+<meta name="description" content="Fichas de verificación sobre alimentación, revisadas por estudiantes de 4° medio del Liceo 7 de Providencia y validadas por Nutrición y Dietética.">
+<meta property="og:title" content="Verifica · NutriLab">
+<meta property="og:description" content="¿Mito, dato o depende? Pon tu veredicto antes de abrir cada ficha.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="portada">
+  <div class="dentro">
+    <div class="kick"><i></i>NutriLab · Grupo 1</div>
+    <h1>Veri<em>fica</em></h1>
+    <p class="lead">Frases sobre comida que circulan en redes, revisadas una por una por estudiantes de 4° medio del Liceo 7 de Providencia y validadas por Nutrición y Dietética.</p>
+    <div class="cifras">
+      <div class="cifra"><b id="cTotal">0</b><span>Fichas</span></div>
+      <div class="cifra m"><b id="cMito">0</b><span>Mito</span></div>
+      <div class="cifra d"><b id="cDato">0</b><span>Dato</span></div>
+      <div class="cifra p"><b id="cDepende">0</b><span>Depende</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="progreso">
+  <div class="caja">
+    <div class="linea">
+      <h2 id="cuenta"></h2>
+      <span id="tino"></span>
+    </div>
+    <div class="riel"><i id="riel"></i></div>
+    <button class="reinicia" id="reinicia">Empezar de nuevo</button>
+  </div>
+</section>
+
+<section class="herramientas">
+  <input id="q" type="search" placeholder="Buscar: azúcar, fruta, light, vitaminas…">
+  <div class="filtros" id="filtros"></div>
+</section>
+
+<main class="rejilla" id="rejilla"></main>
+
+<section class="equipo">
+  <div>
+    <h3>Equipo que investigó estas fichas</h3>
+    <p>[COLOCA LOS NOMBRES DE TU EQUIPO AQUÍ]</p>
+  </div>
+</section>
+
+<footer>
+  <div class="placa"><img src="assets/logo-ua.svg" alt="Universidad Autónoma de Chile"></div>
+  <p>
+    Carreras de Periodismo y de Nutrición y Dietética · Liceo 7 de Providencia<br>
+    Corporación de Desarrollo Social de Providencia · Vinculación con el Medio 2026
+  </p>
+</footer>
+
+<div class="telon" id="telon"><div class="ventana" id="ventana"></div></div>
+
+<script src="js/fichas.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
